@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/kyut.png" type="img/gif">
+</head>
+
+<body>
+    <header>
+        <a href="a" class="logo">Peter</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Events</a></li>
+            <li><a href="#section4">Contact</a></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 id="text">Parallax</h2>
+        <img src="img/mountain_1.png" id="m1">
+        <img src="img/trees_02.png" id="t2">
+        <img src="img/mountain_2.png" id="m2">
+        <img src="img/trees_01.png" id="t1">
+        <img src="img/man.png" id="man">
+        <img src="img/plants.png" id="plants">
+    </section>
+    <section class="sec1" id="section1">
+        <div class="section-1">
+        <h2 class="hidden">Parallax Scrolling Website</h2>
+        <p class="hidden">Parallax scrolling is a captivating and interactive design technique that has revolutionized the way websites
+            are built and experienced. This technique adds an extra layer of depth and engagement to a website by
+            creating a 3D illusion as the user scrolls down the page. With parallax scrolling, background images move at
+            a slower pace than the foreground elements, making the content come alive and creating a dynamic and
+            memorable user experience.
+            <br>
+            <br>
+            Gone are the days of bland and boring websites with static backgrounds. Parallax scrolling is the perfect
+            solution for companies and individuals looking to stand out from the crowd and make a lasting impression on
+            their audience. Whether you're showcasing your portfolio, promoting a product, or telling a story, a
+            parallax scrolling website can take your digital presence to the next level.
+            <br>
+            <br>
+            Not only does parallax scrolling add a visual element to a website, it also enhances the user experience. It
+            encourages visitors to engage with the content and explore the website, leading to longer website sessions
+            and a higher chance of converting visitors into customers. With the increasing importance of user experience
+            in today's digital landscape, a parallax scrolling website is a must for any company looking to stay ahead
+            of the curve.
+            <br>
+            <br>
+            Creating a parallax website is a process that involves HTML, CSS, and JavaScript. HTML provides the
+            structure of the website, while CSS handles the styling and layout. JavaScript brings the website to life by
+            adding interactivity and controlling the speed and direction of the parallax effect. To simplify the
+            process, there are pre-written libraries such as Skrollr and Parallax.js that make it easy to create a
+            parallax effect with minimal coding knowledge.
+            <br>
+            <br>
+            In conclusion, a parallax scrolling website is a must-have for anyone looking to elevate their digital
+            presence and make a lasting impression on their audience. With its dynamic and engaging user experience, a
+            parallax website is the perfect solution for companies and individuals looking to stand out from the crowd
+            and enhance their online presence. So why wait? Get started on creating your own parallax scrolling website
+            today and see the results for yourself!
+        </p>
+    </div>
+    </section>
+    <div class="gradien-effect"></div>
+    <section class="sec2" id="section2">
+        <div class="section-2">
+        <h2 class="hidden">About</h2>
+        <p class="hidden">Creating a parallax scrolling website using HTML, CSS, and JavaScript involves the following steps:
+            <br>
+            <br>
+            HTML Structure: Define the basic structure of your website using HTML elements such as header, section, and
+            footer.
+            <br>
+            <br>
+            CSS Styling: Style the elements using CSS to define their layout, colors, and typography.
+            <br>
+            <br>
+            JavaScript Interaction: Use JavaScript to add dynamic behavior to the website, such as controlling the speed
+            and direction of the parallax effect.
+            <br>
+            <br>
+            Background Images: Add background images to the sections and define their position and size using CSS.
+            <br>
+            <br>
+            Parallax Effect: Create the parallax effect by adjusting the position of the background images based on the
+            scroll position of the page using JavaScript.
+            <br>
+            <br>
+            Fine-tuning: Test and refine the website to ensure that the parallax effect is smooth and visually
+            appealing.
+            <br>
+            <br>
+            To create a basic parallax website, you can use a library such as Skrollr or Parallax.js. These libraries
+            simplify the process and provide pre-written code snippets that you can use to create a parallax effect
+            quickly and easily.
+            <br>
+            <br>
+            It's important to keep in mind that parallax websites can have a significant impact on page load times, so
+            it's important to optimize the images and code for maximum performance. Additionally, not all devices and
+            browsers support parallax scrolling, so it's important to consider the accessibility of your website and
+            provide alternative content for users who cannot view the parallax effect.
+        </p>
+    </div>
+    </section>
+    <section class="sec3" id="section3">
+        <h2>Scroll Events</h2>
+        <p>Here's a simple code for moving objects :</p>
+        <pre>
+            <code>
+                gsap.from("#m1", {
+                    scrollTrigger: {
+                        scrub: true,
+                        viewportWidth: window.innerWidth,
+                        viewportHeight: window.innerHeight
+                    },
+                    y: 100,
+                })
+                gsap.from("#m2", {
+                    scrollTrigger: {
+                        scrub: true,
+                        viewportWidth: window.innerWidth,
+                        viewportHeight: window.innerHeight
+                    },
+                    y: 50,
+                })
+                gsap.from("#t2", {
+                    scrollTrigger: {
+                        scrub: true,
+                        viewportWidth: window.innerWidth,
+                        viewportHeight: window.innerHeight
+                    },
+                    x: -100,
+                })
+                gsap.from("#t1", {
+                    scrollTrigger: {
+                        scrub: true,
+                        viewportWidth: window.innerWidth,
+                        viewportHeight: window.innerHeight
+                    },
+                    x: 50,
+                })
+                gsap.from("#man", {
+                    scrollTrigger: {
+                        scrub: true,
+                        viewportWidth: window.innerWidth,
+                        viewportHeight: window.innerHeight
+                    },
+                    x: -230,
+                })
+                gsap.from("#plants", {
+                    scrollTrigger: {
+                        scrub: true,
+                        viewportWidth: window.innerWidth,
+                        viewportHeight: window.innerHeight
+                    },
+                    x: -50,
+                })
+            </code>
+          </pre>
+    </section>
+    <section class="sec4" id="section4">
+        <h2>Contact</h2>
+        <p>Reach me</p>
+        <div class="contact-form">
+            <form id="form" method="post" action="">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">
+                        <i class="fas fa-comment-alt"></i>
+                    </label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <button id="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    <footer>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <p>Designed by Peter Villanueva</p>
+    </footer>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/contactform.js"></script>
+    <script src="js/navup.js"></script>
+    <script>
+        gsap.from("#m1", {
+            scrollTrigger: {
+                scrub: true,
+                viewportWidth: window.innerWidth,
+                viewportHeight: window.innerHeight
+            },
+            y: 100,
+        })
+        gsap.from("#m2", {
+            scrollTrigger: {
+                scrub: true,
+                viewportWidth: window.innerWidth,
+                viewportHeight: window.innerHeight
+            },
+            y: 50,
+        })
+        gsap.from("#t2", {
+            scrollTrigger: {
+                scrub: true,
+                viewportWidth: window.innerWidth,
+                viewportHeight: window.innerHeight
+            },
+            x: -100,
+        })
+        gsap.from("#t1", {
+            scrollTrigger: {
+                scrub: true,
+                viewportWidth: window.innerWidth,
+                viewportHeight: window.innerHeight
+            },
+            x: 50,
+        })
+        gsap.from("#man", {
+            scrollTrigger: {
+                scrub: true,
+                viewportWidth: window.innerWidth,
+                viewportHeight: window.innerHeight
+            },
+            x: -230,
+        })
+        gsap.from("#plants", {
+            scrollTrigger: {
+                scrub: true,
+                viewportWidth: window.innerWidth,
+                viewportHeight: window.innerHeight
+            },
+            x: -50,
+        })
+    </script>
+</body>
+
+</html>
